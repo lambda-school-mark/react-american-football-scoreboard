@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import "./App.css";
 
 const BottomRow = () => {
-  const [currentQuarter, setCurrentQuarter] = useState(0);
+  const [currentQuarter, setCurrentQuarter] = useState(1);
 
   const quarterAdd = (e) => {
     setCurrentQuarter(currentQuarter + 1);
   };
+
+  if (currentQuarter > 4) {
+    setCurrentQuarter(1);
+  }
 
   return (
     <div className="bottomRow">
