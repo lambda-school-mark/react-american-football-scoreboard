@@ -1,5 +1,5 @@
 //TODO: STEP 1 - Import the useState hook.
-import React from "react";
+import React, { useState } from "react";
 import BottomRow from "./BottomRow";
 import "./App.css";
 
@@ -26,7 +26,6 @@ function App() {
       </section>
       <section className="buttons">
         <div className="homeButtons">
-
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
           <button className="homeButtons__touchdown">Home Touchdown</button>
           <button className="homeButtons__fieldGoal">Home Field Goal</button>
